@@ -1,0 +1,805 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+:root {
+  --fredoka: "Fredoka", sans-serif;
+  --rubik: "Rubik", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+header {
+  max-width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+}
+.fa-bars {
+  color: #fff0f5;
+}
+button {
+  background-color: transparent;
+  border: none;
+  font-family: var(--fredoka);
+  font-size: 16px;
+}
+/* Banner */
+header .banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+header .banner img {
+  border-radius: 40px;
+  width: 900px;
+}
+header .banner .explore-button {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--rubik) !important;
+  position: absolute;
+  background-color: #fba1b7;
+  letter-spacing: 1.3px;
+  color: #fff0f5;
+  width: 190px;
+  height: 55px;
+  border-radius: 14px;
+  bottom: -1.3em;
+}
+header .banner .text-banner {
+  position: absolute;
+  color: white;
+  font-family: var(--rubik);
+  left: 9em;
+  top: 5em;
+}
+header .banner .text-banner span {
+  font-size: 16px;
+}
+header .banner .text-banner h1 {
+  line-height: 39px;
+  width: 430px;
+  font-size: 40px;
+}
+header .banner .text-banner p {
+  width: 400px;
+  font-size: 16px;
+}
+
+/* Navbar */
+nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  font-family: var(--fredoka);
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 4px 0px #ffdbaa;
+}
+nav .hamburger-menu {
+  display: none;
+}
+nav .navbar {
+  display: flex;
+  align-items: center;
+  font-family: var(--fredoka);
+  font-size: 17px;
+  font-weight: 500;
+  z-index: 100;
+}
+nav .navbar ul {
+  margin-right: 3em;
+}
+nav .navbar .login-button {
+  margin-right: 1em;
+  text-align: center;
+  cursor: pointer;
+  font-family: var(--fredoka);
+}
+nav .navbar .register-button {
+  background-color: #fba1b7;
+  text-align: center;
+  color: #fff0f5;
+  padding: 10px 15px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+nav .navbar li {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+}
+nav .navbar li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  background-color: #fba1b7;
+  height: 4px;
+  border-radius: 10px;
+  bottom: -5px;
+  transition: 0.5s;
+}
+nav .navbar li:hover::before {
+  width: 100%;
+}
+.about {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 7em;
+  justify-content: space-between;
+}
+
+/* event section */
+.about article {
+  width: 40%;
+}
+.about aside {
+  position: relative;
+  width: 40%;
+}
+
+.about article h1 {
+  font-size: 40px;
+  font-family: var(--rubik);
+  text-shadow: 5px 0px #ffdbaa;
+}
+.about article p {
+  font-size: 16px;
+  font-family: var(--rubik);
+}
+.about article button {
+  margin-top: 2em;
+  background-color: #fba1b7;
+  width: 120px;
+  height: 40px;
+  color: #fff0f5;
+  border-radius: 12px;
+}
+
+.about aside .album-picture {
+  width: 250px;
+  border-radius: 17px;
+}
+.about aside .album-picture:nth-child(2) {
+  position: absolute;
+  top: 9em;
+  right: 0.5em;
+}
+.about aside .balloon {
+  position: absolute;
+  font-family: var(--fredoka);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 1em;
+  box-shadow: 0px 7px #ffdbaa;
+  left: 4em;
+  padding: 20px;
+  background-color: white;
+}
+.about aside .balloon span {
+  font-size: 40px;
+  font-weight: bold;
+}
+.about aside .balloon span:nth-child(2) {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.about aside .balloon .fa-music {
+  font-size: 27px;
+}
+
+/* event section */
+.event {
+  margin: auto;
+  margin-top: 12em;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.event section {
+  width: 40%;
+  position: relative;
+}
+.event section:nth-child(1) h1 {
+  font-size: 40px;
+  font-family: var(--rubik);
+  width: 300px;
+  line-height: 1.3em;
+  text-shadow: 5px 0px #ffdbaa;
+}
+.event section:nth-child(1) img {
+  width: 450px;
+  border-radius: 30px;
+}
+.event section:nth-child(2) img {
+  width: 350px;
+  border-radius: 30px;
+  margin-top: 2em;
+}
+.event section:nth-child(2) p {
+  font-family: var(--rubik);
+  margin-top: 3em;
+}
+.event section:nth-child(1) .balloon {
+  width: 110px;
+  text-align: center;
+  right: -8em !important;
+  bottom: 8em;
+  position: absolute;
+  font-family: var(--fredoka);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 7px 7px #ffdbaa;
+  padding: 20px;
+  background-color: white;
+  height: 160px;
+  justify-content: center;
+}
+.event section:nth-child(2) .balloon {
+  width: 110px;
+  text-align: center;
+  left: -4em;
+  top: 5em;
+  position: absolute;
+  font-family: var(--fredoka);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -7px 7px #ffdbaa;
+  padding: 20px;
+  background-color: white;
+  height: 160px;
+  justify-content: center;
+}
+.event section:nth-child(1) .balloon span:nth-child(1) {
+  font-size: 13px;
+  color: gray;
+}
+.event section:nth-child(1) .balloon span:nth-child(2) {
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+}
+.event section:nth-child(1) .balloon span:nth-child(3) {
+  margin-top: 20px;
+  font-size: 13px;
+  color: gray;
+}
+.event section:nth-child(1) .balloon span:nth-child(3) .fa-map {
+  margin-top: 8px;
+  background-color: #fba1b7;
+  padding: 9px;
+  border-radius: 50%;
+  color: #fff0f5;
+}
+.event section:nth-child(2) .balloon span:nth-child(1) {
+  font-size: 13px;
+  color: gray;
+}
+.event section:nth-child(2) .balloon span:nth-child(2) {
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+}
+.event section:nth-child(2) .balloon span:nth-child(3) {
+  margin-top: 20px;
+  font-size: 13px;
+  color: gray;
+}
+.event section:nth-child(2) .balloon span:nth-child(3) .fa-map {
+  margin-top: 8px;
+  background-color: #fba1b7;
+  padding: 9px;
+  border-radius: 50%;
+  color: #fff0f5;
+}
+.song {
+  width: 80%;
+  margin: auto;
+  margin-top: 7em;
+}
+.song .description {
+  display: flex;
+  justify-content: space-between;
+}
+.song .description span {
+  width: 40%;
+  font-size: 40px;
+  font-family: var(--rubik);
+  font-weight: bold;
+  text-shadow: 5px 0px #ffdbaa;
+  text-align: end;
+}
+.song .description p {
+  width: 40%;
+  font-family: var(--rubik);
+}
+.list-song {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.list-song .song-container {
+  height: 30em;
+  width: 80%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+  overflow-y: auto;
+  scrollbar-color: #fba1b7 white;
+}
+.song-container::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: white;
+}
+
+.song-container::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+.song-container::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fba1b7;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: white;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fba1b7;
+}
+
+.list-song .song-container .card {
+  width: 200px;
+  height: 260px;
+  padding: 10px;
+}
+.list-song .song-container .card img {
+  width: 100%;
+  border-radius: 6px;
+}
+.list-song .song-container .card .title {
+  font-family: var(--rubik);
+  font-size: 15px;
+  margin-top: 20px;
+  display: flex;
+  font-weight: bold;
+}
+.list-song .song-container .card .years {
+  font-family: var(--rubik);
+  font-size: 12px;
+  display: flex;
+}
+
+.album-list ul li {
+  list-style-type: none;
+  margin-top: 13px;
+  font-family: var(--rubik);
+  text-align: end;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.album-list ul li:hover {
+  color: #fba1b7;
+}
+.partner {
+  width: 80%;
+  margin: auto;
+  margin-top: 7em;
+  font-family: var(--rubik);
+  text-align: center;
+}
+.partner h1 {
+  font-size: 40px;
+  text-shadow: 5px 0px #ffdbaa;
+  margin-bottom: 1.5em;
+}
+.partner .partner-image {
+  display: flex;
+  justify-content: space-evenly;
+}
+.partner .partner-image img {
+  width: 80px;
+}
+footer {
+  width: 80%;
+  margin: auto;
+  padding: 40px 30px 40px 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 2em;
+  border-radius: 14px;
+  margin-top: 7em;
+  background-color: #fba1b7;
+  color: #f5f5f5;
+  margin-bottom: 0;
+  align-items: center;
+}
+footer div:nth-child(1) span {
+  display: flex;
+  font-family: var(--fredoka);
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+}
+footer div:nth-child(1) span:nth-child(2) {
+  justify-content: center;
+  font-family: var(--fredoka);
+  font-size: 14px;
+}
+footer div:nth-child(2) {
+  font-family: var(--fredoka);
+  letter-spacing: 1.2px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+footer div:nth-child(2) span {
+  flex-basis: 30%;
+}
+footer div:nth-child(2) span:hover {
+  color: white;
+}
+.fa-brands {
+  margin-right: 7px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+/* mobile responsive */
+@media only screen and (max-width: 766px) {
+  .partner {
+    width: 100%;
+  }
+  .partner .partner-image {
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+  .partner .partner-image img {
+    width: 80px;
+  }
+  .song .description p {
+    font-size: 15px;
+  }
+  .song .list-song {
+    display: block;
+  }
+  .song .list-song .song-container {
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .song .list-song .album-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 14px;
+  }
+  .song .list-song .album-list ul li {
+    text-align: start;
+  }
+  .event {
+    margin: auto;
+    margin-top: 12em;
+    display: block;
+    width: 80%;
+  }
+  .event section {
+    width: 100%;
+  }
+  .event section:nth-child(1) img {
+    width: 250px;
+  }
+  .event section:nth-child(2) img {
+    width: 260px;
+    position: relative;
+    right: -2.3em;
+  }
+  .event section:nth-child(1) .balloon {
+    width: 74px;
+    height: 110px;
+    bottom: 4em;
+    left: 11em;
+  }
+  .event section:nth-child(2) .balloon {
+    width: 74px;
+    height: 110px;
+    top: 13em;
+    left: 0em;
+  }
+  .event section:nth-child(1) .balloon span:nth-child(1) {
+    font-size: 9px;
+    color: gray;
+  }
+  .event section:nth-child(1) .balloon span:nth-child(2) {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+  }
+  .event section:nth-child(1) .balloon span:nth-child(3) {
+    margin-top: 20px;
+    font-size: 9px;
+    color: gray;
+  }
+  .event section:nth-child(1) .balloon span:nth-child(3) .fa-map {
+    margin-top: 8px;
+    background-color: #fba1b7;
+    padding: 9px;
+    border-radius: 50%;
+    color: #fff0f5;
+  }
+  .event section:nth-child(2) .balloon span:nth-child(1) {
+    font-size: 9px;
+    color: gray;
+  }
+  .event section:nth-child(2) .balloon span:nth-child(2) {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+  }
+  .event section:nth-child(2) .balloon span:nth-child(3) {
+    margin-top: 20px;
+    font-size: 9px;
+    color: gray;
+  }
+  .event section:nth-child(2) .balloon span:nth-child(3) .fa-map {
+    margin-top: 8px;
+    background-color: #fba1b7;
+    padding: 9px;
+    border-radius: 50%;
+    color: #fff0f5;
+  }
+
+  .about aside .balloon .fa-music {
+    font-size: 20px;
+  }
+  header .banner img {
+    width: 350px;
+  }
+  header .banner {
+    margin-top: 2.5em;
+  }
+  header .banner .text-banner {
+    left: 0;
+    top: 2em;
+  }
+  header .banner .text-banner span {
+    font-size: 9px;
+  }
+  header .banner .text-banner h1 {
+    font-size: 14px;
+    width: 47%;
+    line-height: inherit;
+  }
+  header .banner .text-banner p {
+    font-size: 9px;
+    width: 130px;
+    position: absolute;
+    text-align: right;
+    top: 2em;
+    right: 0;
+  }
+  header .banner .explore-button {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+  header nav .navbar {
+    border-radius: 20px;
+    background-color: #ffd1da;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 5.3em;
+    right: 1.5em;
+    transition: max-height 1s ease;
+    max-height: 0;
+    overflow-y: hidden;
+  }
+  header nav .navbar.active {
+    max-height: 400px;
+    transition: all 1s ease;
+  }
+  nav .navbar .login-button {
+    padding: 10px 15px;
+    margin: auto;
+  }
+  nav .navbar .register-button {
+    margin-bottom: 19px;
+  }
+
+  nav .navbar li {
+    display: block;
+    margin-top: 12px;
+  }
+  nav .hamburger-menu {
+    background-color: #fba1b7;
+    padding: 15px;
+    border-radius: 50%;
+    display: inherit;
+  }
+  .about {
+    display: block;
+  }
+  .about article {
+    width: 100%;
+  }
+  .about aside {
+    width: 100%;
+    margin-top: 2em;
+  }
+  .about aside .album-picture {
+    width: 200px;
+    border-radius: 17px;
+  }
+  .about aside .balloon {
+    padding: 9px;
+    bottom: -5em;
+    left: 2em;
+  }
+  .about aside .balloon span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .about aside .balloon span:nth-child(2) {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+/* tablet responsive */
+@media only screen and (max-width: 1024px) and (min-width: 767px) {
+  footer div:nth-child(2) span {
+    flex-basis: 25%;
+  }
+  .event section:nth-child(1) .balloon span:nth-child(1) {
+    font-size: 9px;
+    color: gray;
+  }
+  .event section:nth-child(1) .balloon span:nth-child(2) {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+  }
+  .event section:nth-child(1) .balloon span:nth-child(3) {
+    margin-top: 20px;
+    font-size: 9px;
+    color: gray;
+  }
+  .event section:nth-child(1) .balloon span:nth-child(3) .fa-map {
+    margin-top: 8px;
+    background-color: #fba1b7;
+    padding: 9px;
+    border-radius: 50%;
+    color: #fff0f5;
+  }
+  .event section:nth-child(2) .balloon span:nth-child(1) {
+    font-size: 9px;
+    color: gray;
+  }
+  .event section:nth-child(2) .balloon span:nth-child(2) {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+  }
+  .event section:nth-child(2) .balloon span:nth-child(3) {
+    margin-top: 20px;
+    font-size: 9px;
+    color: gray;
+  }
+  .event section:nth-child(2) .balloon span:nth-child(3) .fa-map {
+    margin-top: 8px;
+    background-color: #fba1b7;
+    padding: 9px;
+    border-radius: 50%;
+    color: #fff0f5;
+  }
+  .event section:nth-child(1) .balloon {
+    width: 74px;
+    height: 110px;
+    bottom: 4em;
+    left: 14em;
+  }
+  .event section:nth-child(2) .balloon {
+    width: 74px;
+    height: 110px;
+    top: 11em;
+    left: 0em;
+  }
+  .event section:nth-child(1) img {
+    width: 300px;
+  }
+  .event section:nth-child(2) img {
+    width: 260px;
+    position: relative;
+    right: -2.3em;
+  }
+  .about aside .balloon .fa-music {
+    font-size: 18px;
+  }
+  .about aside .album-picture {
+    width: 250px;
+    border-radius: 17px;
+  }
+  .about aside .album-picture:nth-child(2) {
+    position: absolute;
+    top: 9em;
+    right: -3em;
+  }
+  .about aside .balloon {
+    padding: 9px;
+    bottom: 7em;
+    left: 1em;
+  }
+  .about aside .balloon span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .about aside .balloon span:nth-child(2) {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  header .banner img {
+    width: 760px;
+  }
+  header .banner .text-banner {
+    left: 0;
+    top: 5em;
+  }
+  header .banner .text-banner span {
+    font-size: 16px;
+  }
+  header .banner .text-banner h1 {
+    font-size: 33px;
+    width: 47%;
+    line-height: inherit;
+  }
+  header .banner .text-banner p {
+    font-size: 17px;
+    width: 200px;
+    position: absolute;
+    text-align: right;
+    top: 2em;
+    right: 0;
+  }
+}
